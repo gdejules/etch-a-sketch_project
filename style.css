@@ -1,14 +1,39 @@
 * {
+  /*
+  outline: 1px solid black;*/
   box-sizing: border-box;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#header-title {
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.header-title {
+  flex: 1 1 0;
   color: #1b211a;
   font-size: 24px;
+  text-align: start;
+  font-weight: 600;
+}
+
+button {
+  flex-shrink: 0;
+  color: white;
+  font-size: 16px;
   font-weight: 500;
-  margin: 16px;
+  padding: 8px 20px;
+  background-color: #1b211a;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(111, 8%, 21%);
 }
 
 #container {
