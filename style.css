@@ -1,15 +1,21 @@
 * {
-  outline: 2px dashed grey;
   box-sizing: border-box;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header-title {
+  color: #1b211a;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 16px;
 }
 
 #container {
   display: flex;
   flex-direction: column;
   margin: 24px;
-  height: 100vh;
+  height: 580px;
 }
 
 .row-container {
@@ -20,4 +26,10 @@
 
 .box-container {
   flex: 1 1 0;
+  border: 1px dashed #8bae66;
+  transition: background-color 0.4s ease;
+}
+
+.box-container:hover {
+  background-color: #1b211a;
 }
